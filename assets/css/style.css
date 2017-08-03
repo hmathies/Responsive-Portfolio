@@ -3,11 +3,7 @@ header {
     color: white;
     background: #ffffff;
     height: 60px;
-    /*border-color: #cccccc;*/
-    border-width: 5px;
-    border-style: solid;
-    border-color: red;
-    border-width: 1px;
+    border-color: #cccccc;
 }
 /*My name/Logo*/
 h1 {
@@ -15,10 +11,8 @@ h1 {
     background: #4aaaa5;
     width: 20%;
     height: 100%;
-    /*top: auto;*/
     font-size: 30px;
     font-family: 'Georgia', Times, Times New Roman, serif;
-    /*margin-top: 10px;*/
     margin-left: 5%;
     padding: 10px;
     display: inline;
@@ -43,9 +37,7 @@ body {
     border-bottom: thick;
     border-color: #dddddd;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    background-color: #f0ece8;
-
-   
+    background-color: #f0ece8;   
 }
 
 h2, h3 {
@@ -62,10 +54,6 @@ h2, h3 {
     height: 650px;
     left: 150px;
     top: 30px;
-    border-style: solid;
-    border-color: red;
-    border-width: 1px;
-
 }
 /*main content*/
 .box-1 {
@@ -75,16 +63,7 @@ h2, h3 {
     margin: 0px;
     padding: 5px;
     float: left;
-    border-style: solid;
-    border-color: red;
-    border-width: 1px;
     /*z-index: 1; tried using this to float text over images*/
-
-/*when adding the border width and color it changed the layout
-because of the math...not enough space so it bumped social 
-media sidebar to bottom. investigate this later*/
-    /*border-width: 5px;*/
-    /*border-color: #dddddd;*/
 }
 
 /*side bar */
@@ -97,9 +76,6 @@ media sidebar to bottom. investigate this later*/
    padding: 5px;
    float: left;
    text-align: center;
-   border-style: solid;
-   border-color: red;
-   border-width: 1px;
 }
 
 .profile-pic {
@@ -119,7 +95,7 @@ media sidebar to bottom. investigate this later*/
 /*I created the class "portfolio-title" but removed it from the html becuase I need to figure out how to place 
 each individual title over the images. when i put the class inside the h4 tag it was laying both under and 
 over the images and the images started to be pushed down...I only changed two of the h4 tags.. */
- .portfolio-title {
+/* .portfolio-title {
     position: relative;
     background-color: #08afa7;
     color: white;
@@ -129,23 +105,9 @@ over the images and the images started to be pushed down...I only changed two of
     height: 30px;
     text-align:center;
     z-index: 2;
-}
+}*/
 
 /*Form elements*/
-form input{
-    font-style: 16px; 
-    height:30px; 
-    width:600px
-}
-#messagebox {
-  font-size:16px; 
-  height:200px; 
-  width:600px
-}
-label{
-    display: block;
-}
-
 .background-switch {
   text-align: center;
   color: white; 
@@ -160,7 +122,20 @@ label{
   height: 50px;
   width: 80px;
   }
-
+form input{
+    font-style: 16px; 
+    height:30px; 
+    width:600px
+}
+label{
+    display: block;
+}
+#messagebox {
+  font-size:16px; 
+  height:200px; 
+  width:600px
+}
+/*Footer*/
 footer {
     position: relative;
     height: 100px;
@@ -171,91 +146,86 @@ footer {
     color: #777777;
     text-align: center;
     clear: both;
-    border-top-style: solid;
-    border-color: #4aaaa5;
-    border-width: 8px;
-
 }
+
 @media only screen and (max-width: 980px) {
   .box {
-  width: 75%;
-  height: 75%;
-}
-.box-1 {
-  width: 55%;
-  height: 50%;
-}
-.box-2 {
-  width: 40%;
-  height: 40%;
-  float: right;
-}
-.profile-pic {
-  width: 100%;
-  height: 75%;
-}
-form input {
- width: 100%;
-}
-#messagebox {
-  width: 100%;
-}
+    width: 75%;
+    height: 75%;
+  }
+  .box-1 {
+    width: 55%;
+    height: 50%;
+  }
+  .box-2 {
+    width: 40%;
+    height: 40%;
+    float: right;
+  }
+  form input {
+    width: 100%;
+  }
+  #messagebox {
+    width: 100%;
+  }
+  .profile-pic {
+    width: 100%;
+    height: 75%;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .box {
-  width: 90%;
-  height: 75%;
-  left: 5%;
-  right: 5%;
-}
-.box-1 {
-  width: 100%;
-  height: 50%;
-  margin-right: 5%;
-}
-.box-2 {
-  width: 100%;
-  height: 40%;
-  float: left;
-  margin:40px 5px 10px 0px;
-}
-.profile-pic {
-  width: 50%;
-  height: 50%;
-}
-form input {
- width: 100%;
-}
-#messagebox {
-  width: 100%;
-}
+    width: 90%;
+    height: 75%;
+    left: 5%;
+    right: 5%;
+  }
+  .box-1 {
+    width: 100%;
+    height: 50%;
+    margin-right: 5%;
+  }
+  .box-2 {
+    width: 100%;
+    height: 40%;
+    float: left;
+    margin:40px 5px 10px 0px;
+  }
+  form input {
+    width: 100%
+  }
+  #messagebox {
+    width: 100%;
+  }
+  .profile-pic {
+    width: 50%;
+    height: 50%;
+  } 
 }
 
 @media screen and (max-width: 640px) {
+  
   header {
-    position: static;
-    width: 100%;
+     position: static;
+     width: 640px;
   }
- /* h1 {
-    width: 100%;
-  }*/
-  .box {
-  color: blue;
-}
-.profile-pic {
-  width: 100%;
-  height: 100%;
-}
-form input {
- /*width: 100%;*/
-}
-#messagebox {
-  /*width: 100%;*/
-}
-ul {
-  float: left;
-}
+  h1 {
+     width: 100%;
+     display: block;
+     margin: 0px;
+  }
+
+  .profile-pic {
+     width: 100%;
+     height: 100%;
+  }
+  
+  ul {
+     float: none;
+     margin: 0 auto;
+     text-align: center;
+  }
 }
 
   
